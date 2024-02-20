@@ -1,4 +1,6 @@
 "use strict";
+// npx json-server -w ./etterem.json
+// npx tsc -w
 async function fetchDataFromMenü() {
     try {
         const response = await fetch("http://localhost:3000/menu");
@@ -53,7 +55,7 @@ function postDataToKosar(data) {
         console.error("Error posting data:", error);
     });
 }
-postDataToKosar({ id: "1", db: 2 });
+clearDataFromKosar();
 function main() {
     // ide hívd meg a függvényeidet aminek kellenek az adatok
 }

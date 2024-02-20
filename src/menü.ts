@@ -1,3 +1,5 @@
+// npx json-server -w ./etterem.json
+// npx tsc -w
 
 async function fetchDataFromMenü(){
     try {
@@ -30,9 +32,6 @@ function clearDataFromKosar(){
     });
 }
 
-
-
-
 function postDataToKosar(data: any){
     clearDataFromKosar();
     fetch("http://localhost:3000/kosar", {
@@ -58,8 +57,7 @@ function postDataToKosar(data: any){
         console.error("Error posting data:", error);
     });
 }
-
-postDataToKosar({id: "1", db: 2});
+clearDataFromKosar();
 
 
 interface Menu {
