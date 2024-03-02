@@ -1,7 +1,4 @@
-interface Kosar {
-    id: string;
-    db: number;
-}
+
 
 interface History {
     id: string;
@@ -9,8 +6,7 @@ interface History {
     items: Kosar[];
 }
 
-let kosar: Kosar[] = [];
-let menu: Menu[] = [];
+
 let ohistory: History[] = [];
 
 

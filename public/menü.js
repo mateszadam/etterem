@@ -13,24 +13,19 @@ async function fetchDataFromMenü() {
         console.error("Error fetching data:", error);
     }
 }
+// Ez továbbra sem jó
 function clearDataFromKosar() {
-    fetch("http://localhost:3000/kosar", {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-    })
-        .then(response => {
-        if (response.ok) {
-            console.log("Data posted successfully");
-        }
-        else {
-            console.error("Failed to post data");
-        }
-    })
-        .catch(error => {
-        console.error("Error posting data:", error);
-    });
+    let e = "";
+    let i = 1;
+    do {
+        fetch("http://localhost:3000/kosar/" + String(i), {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(response => { e = response.ok ? "" : "failed"; }).catch(error => { console.error("Error deleting data:", error); e = "error"; });
+        i++;
+    } while (e != "");
 }
 function postDataToKosar(data) {
     clearDataFromKosar();
@@ -55,7 +50,7 @@ function postDataToKosar(data) {
         console.error("Error posting data:", error);
     });
 }
-clearDataFromKosar();
+let menu = [];
 function main() {
     // ide hívd meg a függvényeidet aminek kellenek az adatok
 }

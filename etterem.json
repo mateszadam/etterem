@@ -1,176 +1,30 @@
 {
   "kosar": [
     {
-      "id": "1",
-      "db": 2
+      "id": "2",
+      "etelid": "2",
+      "db": "3"
     },
     {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
-    },
-    {
-      "id": "1",
-      "db": 2
+      "id": "3",
+      "etelid": "2",
+      "db": "4"
     }
   ],
   "menu": [
     {
       "id": "1",
       "name": "Kebab",
-      "kepURL": "ke.jpg",
-      "leira": "A keabab finom nagyon jó",
-      "ár": 2000
+      "kepURL": "https://media.istockphoto.com/id/851493796/photo/close-up-of-kebab-sandwich.jpg?s=612x612&w=0&k=20&c=gSQ8R-L2J1i0RCPJFXB-vYdWaB4wUcL8I8UAzpjSWVw=",
+      "leiras": "A keabab finom nagyon jó",
+      "ar": 2000
     },
     {
       "id": "2",
-      "tenamext": "Dürüm",
-      "kepURL": "ke.jpg",
-      "leira": "A dürüm finom nagyon jó",
-      "ár": 3000
+      "name": "Dürüm",
+      "kepURL": "https://media.istockphoto.com/id/851493796/photo/close-up-of-kebab-sandwich.jpg?s=612x612&w=0&k=20&c=gSQ8R-L2J1i0RCPJFXB-vYdWaB4wUcL8I8UAzpjSWVw=",
+      "leiras": "A dürüm finom nagyon jó",
+      "ar": 3000
     }
   ],
   "history": [
@@ -210,6 +64,46 @@
         }
       ],
       "price": "3000"
+    }
+  ],
+  "rendeles": [
+    {
+      "id": "842f",
+      "nev": "",
+      "cim": "",
+      "tel": "",
+      "email": "",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "3"
+        },
+        {
+          "id": "3",
+          "etelid": "2",
+          "db": "4"
+        }
+      ]
+    },
+    {
+      "id": "a53e",
+      "nev": "Matesz Ádám",
+      "cim": "Duna utca 8, ",
+      "tel": "06202698612",
+      "email": "matesz.adam@gmail.com",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "3"
+        },
+        {
+          "id": "3",
+          "etelid": "2",
+          "db": "4"
+        }
+      ]
     }
   ]
 }

@@ -1,3 +1,47 @@
 <!-- 8. **Online Rendelés és Szállítás:**
    - Online rendelési platform integrációja, ha az étterem szállítási szolgáltatást is kínál.
    - Rendelések kezelése és kiszállítási követés -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="main">
+      <div class="kosar">
+
+      </div>
+
+      <form class="rendeles">
+         <div class="group">
+            <input type="text" required="required" autocomplete="name" /><span class="highlight"></span><span class="bar"></span>
+            <label>Név</label>
+         </div>
+
+         <div class="group">
+            <input type="text" required="required" autocomplete="address" /><span class="highlight"></span><span class="bar"></span>
+            <label>Cím</label>
+         </div>
+         <div class="group">
+            <input type="tel" required="required" autocomplete="tel-national" /><span class="highlight"></span><span class="bar"></span>
+            <label>Telefonszám</label>
+         </div>
+         <div class="group">
+            <input type="text" required="required" autocomplete="email" /><span class="highlight"></span><span class="bar"></span>
+            <label>Email</label>
+         </div>
+
+         <button class="button-50">Rendelés</button>
+
+      </form>
+   </div>
+   <script src="./public/rendeles.js"></script>
+</body>
+
+</html>
