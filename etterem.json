@@ -3,12 +3,17 @@
     {
       "id": "2",
       "etelid": "2",
-      "db": "3"
+      "db": "2"
     },
     {
       "id": "3",
       "etelid": "2",
       "db": "4"
+    },
+    {
+      "id": "4",
+      "etelid": "1",
+      "db": "6"
     }
   ],
   "menu": [
@@ -87,21 +92,45 @@
       ]
     },
     {
-      "id": "a53e",
-      "nev": "Matesz Ádám",
-      "cim": "Duna utca 8, ",
-      "tel": "06202698612",
-      "email": "matesz.adam@gmail.com",
+      "id": "7fd2",
+      "nev": "feri",
+      "cim": "itt",
+      "tel": "valami",
+      "email": "sasa",
       "etelek": [
         {
           "id": "2",
           "etelid": "2",
+          "db": "1"
+        },
+        {
+          "id": "3",
+          "etelid": "2",
           "db": "3"
+        }
+      ]
+    },
+    {
+      "id": "8798",
+      "nev": "Adam",
+      "cim": "itt",
+      "tel": "valami",
+      "email": "az",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "2"
         },
         {
           "id": "3",
           "etelid": "2",
           "db": "4"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "6"
         }
       ]
     }

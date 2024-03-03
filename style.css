@@ -1,7 +1,8 @@
 .main {
   width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
@@ -321,3 +322,15 @@ label {
     padding: 12px 50px;
   }
 }
+
+
+
+/* siker */
+.siker{
+  text-align: center;
+  font-size: 20px;
+}
+.siker h1{
+  margin: 0;
+}
+
