@@ -22,9 +22,30 @@
     {
       "id": "2",
       "name": "Dürüm",
-      "kepURL": "https://media.istockphoto.com/id/851493796/photo/close-up-of-kebab-sandwich.jpg?s=612x612&w=0&k=20&c=gSQ8R-L2J1i0RCPJFXB-vYdWaB4wUcL8I8UAzpjSWVw=",
+      "kepURL": "https://kebaphazhozszallitas.hu/gyor/wp-content/uploads/2013/04/durum-borju-csirke-friss-zoldseggel-kebapszosszal2-600x600.jpg",
       "leiras": "A dürüm finom nagyon jó",
       "ar": 3000
+    },
+    {
+      "id": "3",
+      "name": "Kebab tál",
+      "kepURL": "https://bestfoodcentrum.hu/wp-content/uploads/2020/11/Kebap-Tal.jpg",
+      "leiras": "Törökország ízei",
+      "ar": 3000
+    },
+    {
+      "id": "4",
+      "name": "Coca-Cola",
+      "kepURL": "https://pampalinipizzeria.hu/wp-content/uploads/2021/02/coca-cola-0-33l.jpg",
+      "leiras": "Leg komolyabb két literes kokák! Te mikor iszol ilyet öcsém?",
+      "ar": 500
+    },
+    {
+      "id": "5",
+      "name": "Sült krumpli",
+      "kepURL": "https://cdn-trans.info/uploads/2019/03/a52db601b570019cc16d489deedf.jpg",
+      "leiras": "Ilyet nem kér senki amúgy",
+      "ar": 750
     }
   ],
   "rendeles": [
