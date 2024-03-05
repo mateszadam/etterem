@@ -1,19 +1,15 @@
 "use strict";
 // npx json-server -w ./etterem.json
 // npx tsc -w
-async function fetchDataFromMenü() {
-    try {
-        const response = await fetch("http://localhost:3000/menu");
-        const data = await response.json();
-        // Process the fetched data here
+fetchDataFromMenü();
+function fetchDataFromMenü() {
+    fetch("http://localhost:3000/menu")
+        .then((response) => response.json())
+        .then((data) => {
         menu = data;
         main();
-    }
-    catch (error) {
-        console.error("Error fetching data:", error);
-    }
+    });
 }
-// Ez továbbra sem jó
 function clearDataFromKosar() {
     let e = "";
     let i = 1;
@@ -57,5 +53,31 @@ function postDataToKosar(data) {
 }
 let menu = [];
 function main() {
-    // ide hívd meg a függvényeidet aminek kellenek az adatok
+    console.log("fut");
+    let s = "";
+    for (let i = 0; i < menu.length; i++) {
+        let item = menu[i];
+        s += `
+          <div class="item2">
+          <img src="${item.kepURL}" alt="">
+          <div class="itemDesc">
+             <p>${item.name}</p>
+             <p>${item.leiras}</p>
+          </div>
+  
+          <p class="price">${item.ar} Ft</p>
+          <input class="quantity" type="number" min="1" max="9" step="1" value="0" data-id="${item.id}">
+          <button class="btn2 btn2-add btm-main" data-id="${item.id}">
+             <span class="mdi mdi-delete mdi-24px"></span>
+             <span class="mdi mdi-delete-empty mdi-24px"></span>
+             <span>Add</span>
+          </button>
+       </div>
+          `;
+        console.log(s);
+    }
+    console.log("futw");
+    console.log(s);
+    console.log(document.querySelector(".kosar"));
+    document.querySelector(".menu").innerHTML = s;
 }
