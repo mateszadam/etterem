@@ -3,17 +3,12 @@
     {
       "id": "2",
       "etelid": "2",
-      "db": "2"
-    },
-    {
-      "id": "3",
-      "etelid": "2",
-      "db": "4"
+      "db": "5"
     },
     {
       "id": "4",
       "etelid": "1",
-      "db": "6"
+      "db": "1"
     }
   ],
   "menu": [
@@ -30,45 +25,6 @@
       "kepURL": "https://media.istockphoto.com/id/851493796/photo/close-up-of-kebab-sandwich.jpg?s=612x612&w=0&k=20&c=gSQ8R-L2J1i0RCPJFXB-vYdWaB4wUcL8I8UAzpjSWVw=",
       "leiras": "A dürüm finom nagyon jó",
       "ar": 3000
-    }
-  ],
-  "history": [
-    {
-      "id": "1",
-      "date": "2021-01-01",
-      "items": [
-        {
-          "id": "2",
-          "db": 2
-        }
-      ],
-      "price": "5000"
-    },
-    {
-      "id": "2",
-      "date": "2021-01-02",
-      "items": [
-        {
-          "id": "2",
-          "db": 2
-        }
-      ],
-      "price": "2000"
-    },
-    {
-      "id": "3",
-      "date": "2021-01-03",
-      "items": [
-        {
-          "id": "2",
-          "db": 2
-        },
-        {
-          "id": "2",
-          "db": 2
-        }
-      ],
-      "price": "3000"
     }
   ],
   "rendeles": [
@@ -131,6 +87,187 @@
           "id": "4",
           "etelid": "1",
           "db": "6"
+        }
+      ]
+    },
+    {
+      "id": "d590",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "3",
+          "etelid": "2",
+          "db": "6"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "8"
+        }
+      ]
+    },
+    {
+      "id": "36cc",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "3",
+          "etelid": "2",
+          "db": "6"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "8"
+        }
+      ]
+    },
+    {
+      "id": "56a2",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "1"
+        }
+      ]
+    },
+    {
+      "id": "e022",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "1"
+        }
+      ]
+    },
+    {
+      "id": "7cf7",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "1"
+        }
+      ]
+    },
+    {
+      "id": "5d23",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "1"
+        }
+      ]
+    },
+    {
+      "id": "749b",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "1"
+        }
+      ]
+    },
+    {
+      "id": "7203",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "1"
+        }
+      ]
+    },
+    {
+      "id": "aa6b",
+      "nev": "dsa",
+      "cim": "dsf",
+      "tel": "dsf",
+      "email": "sd",
+      "etelek": [
+        {
+          "id": "2",
+          "etelid": "2",
+          "db": "5"
+        },
+        {
+          "id": "4",
+          "etelid": "1",
+          "db": "1"
         }
       ]
     }

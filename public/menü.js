@@ -17,18 +17,23 @@ async function fetchDataFromMenü() {
 function clearDataFromKosar() {
     let e = "";
     let i = 1;
-    do {
-        fetch("http://localhost:3000/kosar/" + String(i), {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-        }).then(response => { e = response.ok ? "" : "failed"; }).catch(error => { console.error("Error deleting data:", error); e = "error"; });
-        i++;
-    } while (e != "");
+    fetch("http://localhost:3000/kosar")
+        .then((response) => response.json())
+        .then((data) => {
+        data.forEach((element) => {
+            console.log(element);
+            console.log(element.id);
+            fetch("http://localhost:3000/kosar/" + String(element.id), {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            }).then(response => { e = response.ok ? "" : "failed"; }).catch(error => { console.error("Error deleting data:", error); e = "error"; });
+            i++;
+        });
+    });
 }
 function postDataToKosar(data) {
-    clearDataFromKosar();
     fetch("http://localhost:3000/kosar", {
         method: 'POST',
         headers: {
