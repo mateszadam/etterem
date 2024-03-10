@@ -65,9 +65,10 @@ ul {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     background-color: #00000038;
     backdrop-filter: blur(5px);
+    transition: all 1s;
   }
   .nemuItem img{
-    width: 100%;
+    width: 50%;
   }
   .menu{
     width: 100%;
@@ -75,14 +76,21 @@ ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin-top: 20px;
 
   }
 .nemuItem h1{
     text-align: center;
 }
+.center{
+    text-align: center;
+}
   body {
     background: fixed;
     background-color: rgb(78, 180, 211);
+  }
+  .nemuItem:hover{
+    transform: translateY(-20px);
+
   }
