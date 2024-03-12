@@ -1,14 +1,24 @@
 {
   "kosar": [
     {
-      "id": "2",
-      "etelid": "2",
-      "db": "6"
+      "id": "1fb1",
+      "etelid": "1",
+      "db": "1"
     },
     {
-      "id": "4",
+      "id": "ae8d",
       "etelid": "1",
-      "db": "2"
+      "db": "1"
+    },
+    {
+      "id": "d87f",
+      "etelid": "1",
+      "db": "1"
+    },
+    {
+      "id": "17e5",
+      "etelid": "1",
+      "db": "1"
     }
   ],
   "menu": [
@@ -50,397 +60,32 @@
   ],
   "rendeles": [
     {
-      "id": "842f",
-      "nev": "",
-      "cim": "",
-      "tel": "",
-      "email": "",
+      "id": "7667",
+      "nev": "dasd",
+      "date": "2024-2-12",
+      "cim": "daas",
+      "tel": "d",
+      "email": "asd",
       "etelek": [
         {
-          "id": "2",
-          "etelid": "2",
-          "db": "3"
+          "id": "1fb1",
+          "etelid": "1",
+          "db": "1"
         },
         {
-          "id": "3",
-          "etelid": "2",
-          "db": "4"
-        }
-      ]
-    },
-    {
-      "id": "7fd2",
-      "nev": "feri",
-      "cim": "itt",
-      "tel": "valami",
-      "email": "sasa",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
+          "id": "ae8d",
+          "etelid": "1",
           "db": "1"
         },
         {
-          "id": "3",
-          "etelid": "2",
-          "db": "3"
-        }
-      ]
-    },
-    {
-      "id": "8798",
-      "nev": "Adam",
-      "cim": "itt",
-      "tel": "valami",
-      "email": "az",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "2"
-        },
-        {
-          "id": "3",
-          "etelid": "2",
-          "db": "4"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "6"
-        }
-      ]
-    },
-    {
-      "id": "d590",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
-        },
-        {
-          "id": "3",
-          "etelid": "2",
-          "db": "6"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "8"
-        }
-      ]
-    },
-    {
-      "id": "36cc",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
-        },
-        {
-          "id": "3",
-          "etelid": "2",
-          "db": "6"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "8"
-        }
-      ]
-    },
-    {
-      "id": "56a2",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
-        },
-        {
-          "id": "4",
+          "id": "d87f",
           "etelid": "1",
           "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "e022",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
         },
         {
-          "id": "4",
+          "id": "17e5",
           "etelid": "1",
           "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "7cf7",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "5d23",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "749b",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "7203",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "aa6b",
-      "nev": "dsa",
-      "cim": "dsf",
-      "tel": "dsf",
-      "email": "sd",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "5"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "00ed",
-      "nev": "fsd",
-      "cim": "sdf",
-      "tel": "sdf",
-      "email": "sdf",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "2"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "5624",
-      "nev": "fsd",
-      "cim": "sdf",
-      "tel": "sdf",
-      "email": "sdf",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "2"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "9383",
-      "nev": "fsd",
-      "cim": "sdf",
-      "tel": "sdf",
-      "email": "sdf",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "2"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "cf88",
-      "nev": "fsd",
-      "cim": "sdf",
-      "tel": "sdf",
-      "email": "sdf",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "2"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "1"
-        }
-      ]
-    },
-    {
-      "id": "e043",
-      "nev": "fsd",
-      "cim": "sdf",
-      "tel": "sdf",
-      "email": "sdf",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "6"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "2"
-        }
-      ]
-    },
-    {
-      "id": "1982",
-      "nev": "fsd",
-      "cim": "sdf",
-      "tel": "sdf",
-      "email": "sdf",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "6"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "2"
-        }
-      ]
-    },
-    {
-      "id": "bea9",
-      "nev": "fsd",
-      "cim": "sdf",
-      "tel": "sdf",
-      "email": "sdf",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "6"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "2"
-        }
-      ]
-    },
-    {
-      "id": "92d6",
-      "nev": "fsd",
-      "cim": "sdf",
-      "tel": "sdf",
-      "email": "sdf",
-      "etelek": [
-        {
-          "id": "2",
-          "etelid": "2",
-          "db": "6"
-        },
-        {
-          "id": "4",
-          "etelid": "1",
-          "db": "2"
         }
       ]
     }

@@ -389,3 +389,12 @@ label {
 .menu{
   width: 100%;
 }
+
+#fixedbutton {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  border-radius: 20px;
+  background-color: red;
+  padding: 20px;
+}

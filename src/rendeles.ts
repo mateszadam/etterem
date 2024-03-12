@@ -12,6 +12,7 @@ interface Menu {
 }
 interface Rendeles {
   id?: string;
+  date: string;
   nev: string;
   cim: string;
   tel: string;
@@ -144,9 +145,11 @@ function makeClickEvents() {
         let cím = (inputs[1] as HTMLInputElement).value;
         let tel = (inputs[2] as HTMLInputElement).value;
         let email = (inputs[3] as HTMLInputElement).value;
-
+        let date = new Date();
+        let cDate: string = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
         let order: Rendeles = {
           nev: nev,
+          date: cDate,
           cim: cím,
           tel: tel,
           email: email,

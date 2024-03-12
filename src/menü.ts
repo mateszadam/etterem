@@ -36,8 +36,7 @@ function clearDataFromKosar(){
       });
 }
 
-function postDataToKosar(data: any){
-    
+function postDataToKosar(data: Kosar3){
     fetch("http://localhost:3000/kosar", {
         method: 'POST',
         headers: {
@@ -70,6 +69,12 @@ interface Menu {
     leiras: string;
     ar: number;
 }
+interface Kosar3 {
+    id?: string;
+    etelid: string;
+    db: string;
+
+}
 
 let menu: Menu[] = [];
 
@@ -90,7 +95,7 @@ function main(){
           </div>
   
           <p class="price">${item.ar} Ft</p>
-          <input class="quantity" type="number" min="1" max="9" step="1" value="0" data-id="${item.id}">
+          <input class="quantity" type="number" min="1" max="9" step="1" value="1" data-id="${item.id}">
           <button class="btn2 btn2-add btm-main" data-id="${item.id}">
              <span class="mdi mdi-delete mdi-24px"></span>
              <span class="mdi mdi-delete-empty mdi-24px"></span>
@@ -106,10 +111,28 @@ function main(){
     console.log(document.querySelector(".kosar") as HTMLDivElement);
   
     (document.querySelector(".menu") as HTMLDivElement).innerHTML = s;
-    
+    addClickEvents();
 }
 
 
 
+
+function addClickEvents(){
+    let buttons = document.querySelectorAll(".btn2-add") as NodeListOf<HTMLButtonElement>;
+    buttons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            console.log((e.target as HTMLButtonElement).dataset.id);
+
+            let id = (e.target as HTMLButtonElement).dataset.id;
+            let quantity = (document.querySelector(`input[data-id="${id}"]`) as HTMLInputElement).value;
+            let k: Kosar3 = {
+                etelid: id!,
+                db: quantity
+            };
+                postDataToKosar(k);
+        });
+    });
+};
 
 
