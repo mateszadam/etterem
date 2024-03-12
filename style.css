@@ -350,6 +350,8 @@ label {
   margin: 0;
 }
 .main2{
+  width: 60%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   flex-flow: column wrap;
@@ -357,6 +359,7 @@ label {
   align-items: flex-start;
 }
 .item2{
+  width: calc(50% - 30px);
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -369,6 +372,9 @@ label {
   margin-right: 15px;
   background-color: pink;
   border-radius: 30px;
+  float: left;
+  margin-bottom: 20px;
+
 }
 .item2 img {
   width: 100px;
@@ -380,4 +386,6 @@ label {
   margin: 0;
   text-align: center;
 }
-
+.menu{
+  width: 100%;
+}
