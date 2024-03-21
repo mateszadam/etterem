@@ -30,6 +30,7 @@ function clearDataFromKosar() {
     });
 }
 function postDataToKosar(data) {
+    console.log(data);
     fetch("http://localhost:3000/kosar", {
         method: 'POST',
         headers: {
@@ -64,20 +65,38 @@ function main() {
              <p>${item.name}</p>
              <p>${item.leiras}</p>
           </div>
-  
+
           <p class="price">${item.ar} Ft</p>
-          <input class="quantity" type="number" min="1" max="9" step="1" value="0" data-id="${item.id}">
-          <button class="btn2 btn2-add btm-main" data-id="${item.id}">
+          <input class="quantity" type="number" min="1" max="9" step="1" value="1" data-id="${item.id}">
+          <button class="btn2 btn2-add btm-main" data-id="${item.id}" type="button">
              <span class="mdi mdi-delete mdi-24px"></span>
              <span class="mdi mdi-delete-empty mdi-24px"></span>
              <span>Add</span>
           </button>
        </div>
           `;
-        console.log(s);
     }
     console.log("futw");
     console.log(s);
     console.log(document.querySelector(".kosar"));
     document.querySelector(".menu").innerHTML = s;
+    addClickEvents();
 }
+function addClickEvents() {
+    let buttons = document.querySelectorAll(".btn2-add");
+    console.log(buttons);
+    buttons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            console.log("okok");
+            console.log(e.target.dataset.id);
+            let id = e.target.dataset.id;
+            let quantity = document.querySelector(`input[data-id="${id}"]`).value;
+            let k = {
+                etelid: id,
+                db: quantity
+            };
+            postDataToKosar(k);
+        });
+    });
+}
+;

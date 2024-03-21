@@ -420,20 +420,19 @@ label {
   padding: 20px;
 }
 #map{
-  width: 400PX;
+  width: 520px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (max-width: 800px) {
-#map{
-  width: 100%;
-}
+
 .item{
   flex-direction: column;
   border : 1px solid black;
   border-radius: 20px;
   gap: 0;
+  margin-top: 10px;
 }
 }
 
@@ -442,6 +441,14 @@ label {
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
   
 }

@@ -2,5 +2,5 @@
 
 
 Kevin: Értékelési Riport és Elemzés
-Kaplon: Étlap, Kosár
-Adam: Online Rendelés és Szállítás 
+Kaplon: Étlap, 
+Adam: Online Rendelés és Szállítás, Kosár
