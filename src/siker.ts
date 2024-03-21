@@ -63,3 +63,22 @@ function genItems2() {
   console.log(document.querySelector(".kosar") as HTMLDivElement);
   (document.querySelector(".kosar") as HTMLDivElement).innerHTML = s;
 }
+
+map();
+
+function map() {
+  console.log("fut a map");
+  
+  // <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Szent%20Isv%C3%A1n%20%C3%BAt%20%20Gy%C5%91r+(P)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://freehitcounters.org/'>https://freehitcounters.org</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=cb77449ec774dad2b05fb1ee5895f11f2cadff8b'></script>
+
+
+  const iframe = document.createElement("iframe");
+
+
+  console.log((document.querySelector("#map")! as HTMLDivElement).innerHTML);
+  
+  (document.querySelector("#map")! as HTMLDivElement).innerHTML = '<iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Szent%20Isv%C3%A1n%20%C3%BAt%20%20Gy%C5%91r+(P)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>';
+
+
+  // https://www.google.com/maps/place/47%C2%B040'57.7%22N+17%C2%B037'56.4%22E
+}

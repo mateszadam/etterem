@@ -105,7 +105,8 @@ function makeClickEvents() {
   let inputs = document.querySelectorAll(".quantity");
   for (let i = 0; i < inputs.length; i++) {
     let input = inputs[i] as HTMLInputElement;
-    input.addEventListener("change", () => {
+    input.addEventListener("change", (e) => {
+      e.preventDefault();
       console.log(input);
       console.log(input.value);
       fetch(`http://localhost:3000/kosar/${input.dataset.id}`, {
@@ -118,7 +119,7 @@ function makeClickEvents() {
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-          getKosar();
+          // getKosar();
           console.log("patched");
         });
     });

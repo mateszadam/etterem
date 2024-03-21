@@ -358,8 +358,12 @@ label {
   justify-content: left;
   align-items: flex-start;
 }
+
+
+
 .item2{
   width: calc(50% - 30px);
+  height:  400px;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -376,6 +380,23 @@ label {
   margin-bottom: 20px;
 
 }
+
+@media screen and (max-width: 800px) {
+  .item2 {
+    width: calc(100%);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  .main2{
+    width: 100%;
+  }
+  
+}
+
+
 .item2 img {
   width: 100px;
   height: 100px;
@@ -397,4 +418,30 @@ label {
   border-radius: 20px;
   background-color: red;
   padding: 20px;
+}
+#map{
+  width: 400PX;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+#map{
+  width: 100%;
+}
+.item{
+  flex-direction: column;
+  border : 1px solid black;
+  border-radius: 20px;
+  gap: 0;
+}
+}
+
+@media  screen and (max-width: 1300px) {
+.kosar{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  
 }

@@ -74,7 +74,8 @@ function makeClickEvents() {
     let inputs = document.querySelectorAll(".quantity");
     for (let i = 0; i < inputs.length; i++) {
         let input = inputs[i];
-        input.addEventListener("change", () => {
+        input.addEventListener("change", (e) => {
+            e.preventDefault();
             console.log(input);
             console.log(input.value);
             fetch(`http://localhost:3000/kosar/${input.dataset.id}`, {
@@ -87,7 +88,7 @@ function makeClickEvents() {
                 .then((response) => response.json())
                 .then((data) => {
                 console.log(data);
-                getKosar();
+                // getKosar();
                 console.log("patched");
             });
         });
@@ -113,8 +114,11 @@ function makeClickEvents() {
             let cím = inputs[1].value;
             let tel = inputs[2].value;
             let email = inputs[3].value;
+            let date = new Date();
+            let cDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
             let order = {
                 nev: nev,
+                date: cDate,
                 cim: cím,
                 tel: tel,
                 email: email,
