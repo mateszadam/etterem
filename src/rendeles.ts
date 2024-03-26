@@ -68,7 +68,7 @@ function genItems() {
         <button class="btn btn-delete btm-main" data-id="${Rkosar[i].id}">
            <span class="mdi mdi-delete mdi-24px"></span>
            <span class="mdi mdi-delete-empty mdi-24px"></span>
-           <span>Delete</span>
+           <span>Törlés</span>
         </button>
      </div>
         `;
