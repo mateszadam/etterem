@@ -15,6 +15,19 @@ interface Rendeles {
 }
 
 let ordered: Rendeles[] = [];
+login();
+function login() {
+  var question = prompt("Hogy hívnak kutya?");
+  var response = "admin";
+  if(question === response) {
+    fetchDataFromMenü2().then(() => {
+      generateStatistics();
+    });
+  }
+  else {
+    location.href = 'index.html';
+  }
+}
 
 fetchDataFromMenü2();
 async function fetchDataFromMenü2(): Promise<void> {
@@ -29,7 +42,7 @@ async function fetchDataFromMenü2(): Promise<void> {
 async function fetchEtelDetails(id: string): Promise<string> {
   const response = await fetch(`http://localhost:3000/menu/${id}`);
   const data = await response.json();
-  return data.name;  // Feltételezve, hogy az étel objektumoknak van egy 'name' tulajdonsága
+  return data.name;  
 }
 
 async function main() {
@@ -37,7 +50,7 @@ async function main() {
   const thead = document.createElement('thead');
   const tbody = document.createElement('tbody');
 
-  // Fejléc létrehozása
+
   const headerRow = document.createElement('tr');
   ['ID', 'Dátum', 'Név', 'Cím', 'Telefonszám', 'Email', 'Ételek'].forEach(headerText => {
     const th = document.createElement('th');
@@ -47,7 +60,7 @@ async function main() {
   thead.appendChild(headerRow);
   table.appendChild(thead);
 
-  // Adatok hozzáadása a táblázathoz
+
   for (const rendeles of ordered) {
     const row = document.createElement('tr');
     const columns = [
@@ -74,11 +87,11 @@ async function main() {
 
   table.appendChild(tbody);
 
-  // Táblázat megjelenítése a dokumentumban
+
   const container = document.getElementById('table-container');
   
   if (container) {
-    container.innerHTML = ''; // Törölje a tartalmat a konténerből
+    container.innerHTML = ''; 
     container.appendChild(table);
   } else {
     console.error('Nem található a "table-container" azonosítóval rendelkező elem.');
@@ -97,9 +110,9 @@ async function generateStatistics() {
     }
   }
 
-  console.log('Etel Statistics:', etelStatistics);  // Logolja ki az etelStatistics objektumot a konzolon
+  console.log('Etel Statistics:', etelStatistics); 
 
-  // Darabszámok számjegyeinek összeadása
+
   const digitSumStatistics: { [etelName: string]: number } = {};
 
   for (const [etelName, db] of Object.entries(etelStatistics)) {
@@ -111,9 +124,9 @@ async function generateStatistics() {
     digitSumStatistics[etelName] = digitSum;
   }
 
-  console.log('Digit Sum Statistics:', digitSumStatistics);  // Logolja ki az digitSumStatistics objektumot a konzolon
+  console.log('Digit Sum Statistics:', digitSumStatistics); 
 
-  // Statisztikai adatok táblázatba rendezése
+
   const statTable = document.createElement('table');
   const statThead = document.createElement('thead');
   const statTbody = document.createElement('tbody');
@@ -145,23 +158,12 @@ async function generateStatistics() {
 
   statTable.appendChild(statTbody);
 
-  // Statisztikai táblázat megjelenítése a dokumentumban
   const statContainer = document.getElementById('statistics-container');
   
   if (statContainer) {
-    statContainer.innerHTML = ''; // Törölje a tartalmat a konténerből
+    statContainer.innerHTML = '';
     statContainer.appendChild(statTable);
   } else {
     console.error('Nem található a "statistics-container" azonosítóval rendelkező elem.');
   }
 }
-
-
-// Adatok lekérdezése, fő függvény meghívása és statisztika generálása
-fetchDataFromMenü2().then(() => {
-  generateStatistics();
-});
-
-
-// Adatok lekérdezése és fő függvény meghívása
-fetchDataFromMenü2();
