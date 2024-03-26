@@ -435,10 +435,15 @@ label {
 
 .item{
   flex-direction: column;
-  border : 1px solid black;
+  border : 1px solid rgba(0, 0, 0, 0.479);
   border-radius: 20px;
   gap: 0;
+  padding: 4px;
   margin-top: 10px;
+
+}
+.item .itemDesc p{
+  text-align: center;
 }
 }
 

@@ -101,7 +101,7 @@ function main2(){
           <button class="btn2 btn2-add btm-main" data-id="${item.id}" type="button">
              <span class="mdi mdi-delete mdi-24px"></span>
              <span class="mdi mdi-delete-empty mdi-24px"></span>
-             <span>Add</span>
+             <span>Kosárba</span>
           </button>
        </div>
           `;
