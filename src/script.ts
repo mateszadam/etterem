@@ -16,8 +16,8 @@ interface Rendeles {
 
 let ordered: Rendeles[] = [];
 
-fetchDataFromMenü();
-async function fetchDataFromMenü(): Promise<void> {
+fetchDataFromMenü2();
+async function fetchDataFromMenü2(): Promise<void> {
   return fetch("http://localhost:3000/rendeles")
     .then((response) => response.json())
     .then((data) => {
@@ -158,10 +158,10 @@ async function generateStatistics() {
 
 
 // Adatok lekérdezése, fő függvény meghívása és statisztika generálása
-fetchDataFromMenü().then(() => {
+fetchDataFromMenü2().then(() => {
   generateStatistics();
 });
 
 
 // Adatok lekérdezése és fő függvény meghívása
-fetchDataFromMenü();
+fetchDataFromMenü2();

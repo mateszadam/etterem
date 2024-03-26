@@ -33,7 +33,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background-color: pink;
+    background-color: rgba(54, 54, 54, 0.171);
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }

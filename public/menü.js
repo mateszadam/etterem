@@ -7,7 +7,7 @@ function fetchDataFromMenü() {
         .then((response) => response.json())
         .then((data) => {
         menu = data;
-        main();
+        main2();
     });
 }
 function clearDataFromKosar() {
@@ -53,7 +53,7 @@ function postDataToKosar(data) {
     });
 }
 let menu = [];
-function main() {
+function main2() {
     console.log("fut");
     let s = "";
     for (let i = 0; i < menu.length; i++) {

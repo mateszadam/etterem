@@ -6,7 +6,7 @@ fetchDataFromMenü()
       .then((response) => response.json())
       .then((data) => {
         menu = data
-        main()
+        main2()
     });
 
 }
@@ -80,7 +80,7 @@ interface Kosar3 {
 
 let menu: Menu[] = [];
 
-function main(){
+function main2(){
     console.log("fut");
 
     let s: string = "";

@@ -1,7 +1,7 @@
 "use strict";
 let ordered = [];
-fetchDataFromMenü();
-async function fetchDataFromMenü() {
+fetchDataFromMenü2();
+async function fetchDataFromMenü2() {
     return fetch("http://localhost:3000/rendeles")
         .then((response) => response.json())
         .then((data) => {
@@ -120,8 +120,8 @@ async function generateStatistics() {
     }
 }
 // Adatok lekérdezése, fő függvény meghívása és statisztika generálása
-fetchDataFromMenü().then(() => {
+fetchDataFromMenü2().then(() => {
     generateStatistics();
 });
 // Adatok lekérdezése és fő függvény meghívása
-fetchDataFromMenü();
+fetchDataFromMenü2();
